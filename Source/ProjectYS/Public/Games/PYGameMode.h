@@ -16,4 +16,7 @@ class PROJECTYS_API APYGameMode : public AGameModeBase
 	
 public:
 	APYGameMode();
+
+public:
+	virtual void PostLogin(APlayerController* NewPlayer) override;
 };

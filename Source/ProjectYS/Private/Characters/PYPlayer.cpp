@@ -202,8 +202,3 @@ void APYPlayer::EndCombo(UAnimMontage* InAnimMontage, bool bInterrupted)
     bIsAttackKeyPressed = false;
     GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Walking);
 }
-
-void APYPlayer::OnCurrentLevelChanged(int32 InOldCurrentLevel, int32 InNewCurrentLevel)
-{
-
-}

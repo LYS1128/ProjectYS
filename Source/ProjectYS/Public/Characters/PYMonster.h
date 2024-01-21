@@ -22,5 +22,10 @@ public:
 		MONCOUNT
 	};
 
+public:
+	void SetPlayerDetect(bool PlayerDetect) { bIsPlayerDetect = PlayerDetect; }
+
+protected:
+	bool bIsPlayerDetect = false;
 
 };

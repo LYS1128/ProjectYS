@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Characters/PYCharacter.h"
 #include "InputActionValue.h"
+#include "../Items/PYWeapon.h"
 #include "PYPlayer.generated.h"
 
 /**
@@ -56,9 +57,6 @@ private:
 
     UFUNCTION()
     void EndCombo(class UAnimMontage* InAnimMontage, bool bInterrupted);
-
-    UFUNCTION()
-    void OnCurrentLevelChanged(int32 InOldCurrentLevel, int32 InNewCurrentLevel);
 
 private:
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "APYPlayer", meta = (AllowPrivateAccess))

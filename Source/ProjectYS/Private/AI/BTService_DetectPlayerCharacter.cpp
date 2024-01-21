@@ -21,7 +21,7 @@ void UBTService_DetectPlayerCharacter::TickNode(UBehaviorTreeComponent& OwnerCom
     APYAIController* AIC = Cast<APYAIController>(OwnerComp.GetAIOwner());
     if (true == ::IsValid(AIC))
     {
-        APYMonMinion* MonMinion = Cast<APYMonMinion>(AIC->GetPawn());
+        APYMonster* MonMinion = Cast<APYMonster>(AIC->GetPawn());
         if (true == ::IsValid(MonMinion))
         {
             UWorld* World = MonMinion->GetWorld();

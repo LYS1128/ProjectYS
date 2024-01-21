@@ -96,7 +96,7 @@ void APYCharacter::CheckHit()
 		GetActorLocation(),
 		GetActorLocation() + AttackRange,
 		FQuat::Identity,
-		ECollisionChannel::ECC_EngineTraceChannel2,
+		ECollisionChannel::ECC_GameTraceChannel2,
 		FCollisionShape::MakeSphere(AttackRadius),
 		Params
 	);

@@ -4,21 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "Characters/PYMonster.h"
-#include "PYMonMinion.generated.h"
+#include "PYMonBoss.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PROJECTYS_API APYMonMinion : public APYMonster
+class PROJECTYS_API APYMonBoss : public APYMonster
 {
 	GENERATED_BODY()
-
-	friend class UBTTask_Attack;
-
-public:
-	APYMonMinion();
 	
+public:
+	APYMonBoss();
+
 public:
 	virtual void BeginPlay() override;
 
@@ -36,14 +34,6 @@ private:
 	UFUNCTION()
 	void OnAttackAnimMontageEnded(class UAnimMontage* Montage, bool bIsInterrupt);
 
-	void BeginCombo();
-
-	UFUNCTION()
-	void CheckCanNextCombo();
-
-	UFUNCTION()
-	void EndCombo(class UAnimMontage* InAnimMontage, bool bInterrupted);
-
 private:
 
 	bool bIsAttacking = false;
@@ -54,6 +44,6 @@ private:
 
 	int32 CurrentComboCount = 0;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "APYMonMinion", Meta = (AllowPrivateAccess))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "APYMonBoss", Meta = (AllowPrivateAccess))
 	TObjectPtr<class UPYWidgetComponent> WidgetComponent;
 };

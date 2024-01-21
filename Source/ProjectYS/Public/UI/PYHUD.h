@@ -32,6 +32,12 @@ protected:
     TObjectPtr<class UTextBlock> PlayerNameText;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UPYHUD", Meta = (BindWidget))
+    TObjectPtr<class UImage> SwordImg;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UPYHUD", Meta = (BindWidget))
+    TObjectPtr<class UImage> GunImg;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UPYHUD", Meta = (BindWidget))
     TObjectPtr<class UPYW_HPBar> HPBar;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UPYHUD", Meta = (BindWidget))
